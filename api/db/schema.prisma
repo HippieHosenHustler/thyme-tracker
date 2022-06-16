@@ -8,4 +8,9 @@ generator client {
   binaryTargets = "native"
 }
 
-
+model TimeEntry {
+  id          String    @id @default(cuid())
+  title       String
+  startTime   DateTime  @default(now())
+  endTime     DateTime?
+ }

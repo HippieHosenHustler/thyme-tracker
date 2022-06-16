@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE "TimeEntry" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "startTime" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "endTime" DATETIME
+);
